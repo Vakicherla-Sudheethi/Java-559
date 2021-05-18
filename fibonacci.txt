@@ -1,0 +1,26 @@
+import java.util.*;
+class Fibo
+{
+public static void main(String args[])
+{
+int n,a=0,b=1,c,sum=0;
+Scanner sc=new Scanner(System.in);
+System.out.println("enter a number");
+n=sc.nextInt();
+System.out.println(a+"\n"+b+"\n");
+c=a+b;
+while(c<=n)
+{
+a=b;
+b=c;
+c=a+b;
+System.out.println(c+" ");
+if(c%2==0)
+{
+sum=sum+c;
+}
+
+}
+System.out.println("sum:"+sum);
+}
+}

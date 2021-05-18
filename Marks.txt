@@ -1,0 +1,60 @@
+import java.util.*;
+interface I
+{
+public void showI();
+}
+interface E
+{
+public void showE();
+}
+class M implements I,E
+{
+int a1,b1,c1,d1,e1;
+int a2,b2,c2,d2,e2;
+public void showI()
+{
+Scanner sc=new Scanner(System.in);
+System.out.println("enter the internal marks of java=");
+a1=sc.nextInt();
+System.out.println("enter the internal marks of ads=");
+b1=sc.nextInt();
+System.out.println("enter the internal marks of se=");
+c1=sc.nextInt();
+System.out.println("enter the internal marks of dld=");
+d1=sc.nextInt();
+System.out.println("enter the internal marks of dm=");
+e1=sc.nextInt();
+}
+public void showE()
+{
+Scanner sc=new Scanner(System.in);
+System.out.println("enter the external marks of java=");
+a2=sc.nextInt();
+System.out.println("enter the external marks of ads=");
+b2=sc.nextInt();
+System.out.println("enter the external marks of se=");
+c2=sc.nextInt();
+System.out.println("enter the external marks of dld=");
+d2=sc.nextInt();
+System.out.println("enter the external marks of dm=");
+e2=sc.nextInt();
+}
+void showM()
+{
+System.out.println("the total marks of java="+(a1+a2));
+System.out.println("the total marks of ads="+(b1+b2));
+System.out.println("the total marks of se="+(c1+c2));
+System.out.println("the total marks of dld="+(d1+d2));
+System.out.println("the total marks of dm="+(e1+e2));
+}
+}
+class Marks
+{
+public static void main(String args[])
+{
+M m=new M();
+m.showI();
+m.showE();
+m.showM();
+}
+}
